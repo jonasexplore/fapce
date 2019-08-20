@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main(int argc, char const *argv[])
+{
+	float vet[12][12], media, soma;
+  int num;
+	char operation;
+
+	scanf("%i", &num);
+	scanf("%c*c", &operation);
+
+	for (int i = 0; i < 12; i++){
+		for (int j = 0; j < 12; j++){
+			scanf("%f", &vet[i][j]);
+		} 
+	}
+	
+	switch(operation){
+		case 'S':{
+			for (int i = 0; i < 12; i++){
+				soma += vet[num][i];
+			}
+			printf("%.1f\n", soma);
+			break;
+		}
+		case 'M':{
+			for (int i = 0; i < 12; ++i)
+			{
+				soma += vet[num][i];
+			}
+			media = soma/12;
+			printf("%.1f\n", media);
+			break;
+		} 
+	}
+	
+	return 0;
+}
