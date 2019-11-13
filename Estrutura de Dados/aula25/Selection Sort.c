@@ -7,7 +7,7 @@ void selection_sort(int num[], int tam) {
   {
      min = i;
      for (j = (i+1); j < tam; j++) {
-       if(num[j] < num[min]) 
+       if(num[j] > num[min]) 
          min = j;
      }
      if (num[i] != num[min]) {
@@ -16,7 +16,7 @@ void selection_sort(int num[], int tam) {
        num[min] = aux;
      }
   }
-  for(int k = tam-1; k >= 0; k--){
+  for(int k = 0; k < (tam); k++){
     printf("%d", num[k]);
   }
 }
@@ -27,5 +27,4 @@ int main(void) {
 
   return 0;
 }
-
 
