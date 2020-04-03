@@ -1,0 +1,19 @@
+body {
+    background-color: whitesmoke;
+}
+
+.navbar {
+    box-shadow: 1px 1px 5px rgb(170, 170, 170);
+}
+
+.form-cadastro {
+    background-color: white;
+    margin: 30px auto;
+    box-shadow: 2px 1px 5px rgb(170, 170, 170);
+}
+
+.img-social {
+    width: 120px;
+    height: 25px;
+    cursor: pointer;
+}
